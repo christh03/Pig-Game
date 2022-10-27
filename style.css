@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+
+  background: #da4453; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  position: relative;
+  background-color: rgba(86, 83, 83, 0.35);
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 10rem auto 0 auto;
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 5px 5px 30px rgb(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  z-index: 10;
+}
+
+.player-1,
+.player-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 5rem;
+  transition: 0.8s ease-in-out;
+}
+
+.player-1 {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.player-2 {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.heading {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+
+.score {
+  margin-bottom: 5rem;
+  font-size: 5rem;
+  font-weight: 300;
+  color: #aa397b;
+}
+
+.ctn-current {
+  background-color: #aa397b;
+  padding: 1rem 4rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.current {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.current-score {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.btn {
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+  z-index: 50;
+}
+
+.btn:active {
+  transform: translateY(-20%);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.new-game {
+  top: 2rem;
+  left: 42.5%;
+}
+
+.dice {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 5px;
+  position: absolute;
+  left: 44.5%;
+  top: 30%;
+}
+
+.roll {
+  bottom: 28%;
+  left: 42.5%;
+}
+
+.hold {
+  bottom: 19%;
+  left: 44.5%;
+}
+
+.player-active {
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: 0.8s ease-in-out;
+}
+
+.winner {
+  background-color: rgb(103, 158, 129);
+  border-radius: 1rem;
+  transform: scale(1.3);
+}
+
+.new-move-r {
+  top: 4%;
+  left: 17%;
+  transition: 0.3s ease-in-out;
+}
+
+.new-move-l {
+  top: 4%;
+  left: 66%;
+  transition: 0.3s ease-in-out;
+}
+
+.hidden {
+  display: none;
+  transition: 0.3s ease-in-out;
+}

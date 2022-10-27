@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <button class="btn hold">🤚 HOLD</button>
+      <button class="btn roll">🎲 ROLL DICE</button>
+      <button class="btn new-game"><p>🔄 NEW GAME</p></button>
+      <img class="dice" src="./assets/dice-6.png" alt="dice" />
+      <section class="player-1 player--0 player-active">
+        <h1 class="heading" id="name--0">PLAYER 1</h1>
+        <h2 class="score" id="score--0">50</h2>
+        <div class="ctn-current">
+          <h3 class="current">CURRENT</h3>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player-2 player--1">
+        <h1 class="heading" id="name--1">PLAYER 2</h1>
+        <h2 class="score" id="score--1">30</h2>
+        <div class="ctn-current">
+          <h3 class="current">CURRENT</h3>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

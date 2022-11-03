@@ -34,7 +34,7 @@ btnRoll.addEventListener('click', () => {
 
     diceEl.src = `./assets/dice-${dice}.png`;
 
-    diceEl.setAttribute('src', `./assets/dice-${dice}.png`);
+    // diceEl.setAttribute('src', `./assets/dice-${dice}.png`);
     diceEl.classList.remove('hidden');
 
     if (dice !== 1) {
